@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: "himm-db"
+    build: .
+    command: "node app.js"
+    ports:
+      - "80:80"
+    depends_on:
+      - "mongo"
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
