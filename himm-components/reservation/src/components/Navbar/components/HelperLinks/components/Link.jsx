@@ -4,10 +4,11 @@ import styled from 'styled-components';
 const Root = styled.div`
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 76px;
   padding: 0 8px;
 
   &:hover {
+    margin-bottom: -2px;
     border-bottom: 2px solid ${(props) => props.theme.strongFont};
   }
 `;
@@ -17,13 +18,18 @@ const Anchor = styled.a`
   color: ${(props) => props.theme.strongFont};
   font-size: 14px;
   font-weight: 500;
-  display: block;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
 `;
 
-const Link = ({ text, icon }) => {
+const Link = ({ text, Icon = undefined }) => {
   return (
     <Root>
-        <Anchor href="#">{text}</Anchor>
+        <Anchor href="#">{Icon}  {text}</Anchor>
     </Root>
   )
 };

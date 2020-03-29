@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from './components/Link';
+import Global from '../../../../../assets/Global.svg'
 
 const Root = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const Root = styled.div`
 const HelperLinks = () => {
   return (
     <Root>
-        <Link text="English (US)" />
+        <Link text="English (US)" Icon={<Global />} />
         <Link text="$ USD" />
         <Link text="Become a host" />
         <Link text="Help" />

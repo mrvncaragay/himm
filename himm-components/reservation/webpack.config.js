@@ -35,7 +35,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, "public"), // index.html
-    host:'0.0.0.0',
+    host:'localhost',
     port: 3000,
   },
 };
