@@ -7,3 +7,4 @@ export const borderColorV2 = "#cccccc";
 export const borderColor = "#EBEBEB";
 export const checkIn = "#40969a";
 export const inputBackground = "#99ede6";
+export const border = `1px solid ${borderColorV2}`;
