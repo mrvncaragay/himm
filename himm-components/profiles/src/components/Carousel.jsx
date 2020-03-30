@@ -27,9 +27,6 @@ const Slider = styled.div`
 const Wrapper = styled.div`
    display: flex;
    height: 300px;
-   //overflow: hidden;
-   //margin-left: 10px;
-   //margin-right: auto;
    transition: transform 170ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
    float:left;
    width: 890px;
@@ -46,12 +43,8 @@ const Wrapper = styled.div`
 `;
 
 const BtnContainer = styled.div`
-    width: 910px;
     height: 270px;
     left: -20px;
-   // border: 3px solid yellow; 
-    //margin-left: auto;
-   // margin-right: auto;
     position: relative;
     display: flex;
     z-index: 0;
