@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
 `;
 
 const Box = styled.div`
@@ -296,18 +297,3 @@ class Contact extends React.Component {
 }
 
 export default Contact;
-
-{/* <form>
-    <label>
-        Country/Region:
-        <select>
-            <option>United States (+1)</option>
-            <option>Uzbekistan (+998)</option>
-            <option>Vanuatu (+678)</option>
-            <option>Vatican City (+379)</option>
-            <option>Venezuela (+58)</option>
-            <option>Vietnam (+84)</option>
-            <option>Wallis and Futuna (+681)</option>
-        </select>
-    </label>
-</form> */}

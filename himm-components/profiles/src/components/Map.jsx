@@ -8,6 +8,11 @@ const Mapdiv = styled.div`
     width: 70%;
     height: 50%;
   }
+
+  h2 {
+    color: #222222;
+    font-weight: 500;
+  }
 `;
 
 class Map extends React.Component {

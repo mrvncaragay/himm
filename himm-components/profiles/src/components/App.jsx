@@ -23,10 +23,16 @@ const Wrapper = styled.div`
       width: 90%;
       height: 60%;
     }
+
+    .more-home {
+      color: #222222;
+      font-weight: 500;
+    }
 `;
 
 const MainBodyLeft = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
 
   @media (max-width: 700px) {
@@ -57,9 +63,10 @@ const Highlights = styled.div`
 `;
 
 const ShowAll = styled.h3`
+  margin: 0;
   cursor: pointer;
-  color: #008489;
-  font-weight: 400;
+  color: #222222;
+  font-weight: 500;
   font-size: 16px;
   &:hover {
     text-decoration: underline;
@@ -118,25 +125,24 @@ class App extends React.Component {
                   <Header room={this.state.rooms[randomIndex]} />
                 </Heading>
 
-                {/* <Highlights>
-                <Highlight room={this.state.rooms[randomIndex]} />
+                 <Highlights>
+                  <Highlight room={this.state.rooms[randomIndex]} />
                 </Highlights>
+
                 <Body room={this.state.rooms[randomIndex]} />
-                
                 <ShowAll onClick={this.openLogIn}>Contact host</ShowAll>
-                
                 <Contact logged={this.state.logIn} closeLogIn={this.closeLogIn}>Contact host</Contact>
                 
                 <Amenity room={this.state.rooms[randomIndex]} />
-                {console.log('rfehere')}
                 <ShowAll onClick={this.openModal}>Show All 10 Amenities</ShowAll>
+                
                 <Map />
-                <h2>More homes you may like</h2>
-                <Carousel room={this.state.rooms} curRoom={this.state.shift} nextRoom={this.nextRoom} preRoom={this.preRoom}/> */}
+                <h2 className="more-home">More homes you may like</h2>
+
+                <Carousel room={this.state.rooms} curRoom={this.state.shift} nextRoom={this.nextRoom} preRoom={this.preRoom}/>
               </MainBodyLeft>
-          {/* </Wrapper>  */}
             <div>
-              {/* <Modal room={this.state.rooms[randomIndex]} show={this.state.showModal} closeModal={this.closeModal} /> */}
+              <Modal room={this.state.rooms[randomIndex]} show={this.state.showModal} closeModal={this.closeModal} />
             </div>
           </Wrapper>        
         )

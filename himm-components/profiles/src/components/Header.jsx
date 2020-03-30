@@ -21,7 +21,6 @@ const Item = styled.div`
 
 const BoxWrapper = styled.div`
     display: flex;
-    width: 86%;
     justify-content: space-between;
     border-bottom: 1px solid #e4e4e4; 
     padding-bottom: 16px; 
