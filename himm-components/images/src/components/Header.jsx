@@ -36,13 +36,17 @@ const data = [
 
 const Root = styled.div`
   padding: 0 80px;
-  margin: 24px 0;
+  margin: 24px 151px;
+
+  @media (max-width: 1440px) {
+    margin: 24px 0;
+  }
 `;
 
 const Description = styled.div`
   h2 {
     font-weight: 500;
-    margin-bottom: 0;
+    margin: 0;
     color: #222222;
   }
 `;
@@ -59,7 +63,7 @@ const Info = styled.div`
 
   .city {
     text-decoration: underline;
-    color: #878787;
+    color: #222222;
   }
 
   .rating {
@@ -79,7 +83,7 @@ const Info = styled.div`
     align-items: center;
 
     .icon {
-      color: #878787;
+      color: #222222;
       font-size: 24px;
       margin-right: 10px;
     }

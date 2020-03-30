@@ -20,14 +20,14 @@ export const Image = styled.img`
 
 // the wrapper that organizes the gallery.
 export const Wrapper = styled.div`
-margin-left: 80px;
-margin-right: 80px;
+  margin: 0 151px;
+  padding: 0 80px;
   display: grid;
-  grid-template-columns: 50% 25% 25%;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 190px 200px;
   grid-gap: 7px;
   grid-template-areas: "first second third"
-                       "first fourth fifth";
+                        "first fourth fifth";
   #first {
     grid-area: first;
     border-radius: 10px 0px 0px 10px;
@@ -45,5 +45,9 @@ margin-right: 80px;
   #fifth {
     grid-area: fifth;
     border-radius: 0px 0px 10px 0px;
+  }
+
+  @media (max-width: 1440px) {
+    margin: 0;
   }
 `;
