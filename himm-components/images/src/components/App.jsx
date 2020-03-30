@@ -1,6 +1,13 @@
 import React from "react";
 import axios from "axios";
 import Listings from "./Listings.jsx";
+import styled from 'styled-components';
+import Header from './Header';
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +21,7 @@ class App extends React.Component {
   }
 
   getListing(id) {
-    axios.get("http://18.144.84.50/api/listings")
+    axios.get("http://localhost/api/listings")
       .then(({ data }) => {
         this.setState({ listing: data[Math.floor(Math.random() * 30)] });
       })
@@ -25,9 +32,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Root>
+        <Header />
         { this.state.listing ? <Listings listing={this.state.listing} /> : "" }
-      </div>
+      </Root>
     );
   }
 }
