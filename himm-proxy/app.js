@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.PORT || 81;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Listening to PORT ${PORT}`);
 });

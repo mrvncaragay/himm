@@ -26,11 +26,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid #e4e4e4;  */
 }
 
 .main-body-container {
   display: flex;
+  flex-direction: column;
   margin: 30px 151px 0px 151px;
   padding: 0px 80px;
   height: 100%;
@@ -47,16 +47,17 @@ body {
 
 .main-body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .main-body-left {
-  flex: 1;
+  width: 60%;
 }
 
 .main-body-right {
   display: flex;
+  width: 376px;
 }
 
 @media screen and (max-width: 1127px) { 
@@ -77,4 +78,8 @@ body {
     -moz-box-shadow: 0px -10px 54px -14px rgba(0,0,0,0.75);
     box-shadow: 0px -10px 54px -20px rgba(0,0,0,0.75);
   }
+}
+
+#reviews {
+  margin-bottom: 80px;
 }
