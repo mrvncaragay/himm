@@ -4,7 +4,7 @@ import Search from '../../../../assets/Search.svg'
 
 const Root = styled.div`
   height: inherit;
-  flex-basis: 955px;
+  flex: 0 1 955px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

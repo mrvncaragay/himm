@@ -5,7 +5,7 @@ import Global from '../../../../../assets/Global.svg'
 
 const Root = styled.div`
   display: flex;
-  flex: 1;
+  flex: 1 0 546px;
   width: 100%;
   height: 100%;
   display: flex;
