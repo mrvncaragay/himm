@@ -17,7 +17,6 @@ const ReviewHeader = () => {
   }, [])
 
   return reviews ? <ReviewList reviews={reviews} setState={setReviews} /> : "";
-
 }
 
 export default ReviewHeader;
