@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
 import * as theme from "./styled-components/theme";
 import App from "./components/App";
-import Navbar from './components/Navbar'
+import Navbar from "./components/Navbar";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -13,8 +13,8 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}> 
+  <ThemeProvider theme={theme}>
     <Navbar />
-  </ThemeProvider>, 
-  document.getElementById("navbar")
+  </ThemeProvider>,
+  document.getElementById("navbar"),
 );

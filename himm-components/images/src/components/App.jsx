@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   getListing(id) {
-    axios.get("http://18.144.84.50/api/listings")
+    axios.get("http://52.53.209.190/api/listings")
       .then(({ data }) => {
         this.setState({ listing: data[Math.floor(Math.random() * 30)] });
       })

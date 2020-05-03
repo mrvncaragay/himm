@@ -68,7 +68,7 @@ app.get('/api/profiles', (req, res) => {
     .catch(err => console.log(err));
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 81;
 app.listen(PORT, () => {
   console.log(`Listening to PORT ${PORT}`);
 });

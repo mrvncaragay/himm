@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://18.144.84.50/api',
+  baseURL: 'http://52.53.209.190/api',
 });
 
 export const getAllReviews = () => api.get('/reviews');

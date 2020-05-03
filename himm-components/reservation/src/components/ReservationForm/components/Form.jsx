@@ -51,7 +51,7 @@ const ReservationForm = () => {
 
   const fetchAllRooms = () => {
     axios
-      .get("http://18.144.84.50/api/rooms")
+      .get("http://52.53.209.190/api/rooms")
       .then(({ data: rooms }) => {
         const rand = Math.floor(Math.random() * 20);
         setRoom(dispatch)(rooms[rand]);

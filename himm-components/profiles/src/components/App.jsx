@@ -13,7 +13,7 @@ import Carousel from './Carousel.jsx';
 const Wrapper = styled.div`
     display: flex;
     overflow-wrap: break-word;
-    padding-bottom:15%;
+    padding-bottom:5%;
     user-select: none;
     height: auto;
     line-height: 1.375em;
@@ -109,7 +109,7 @@ class App extends React.Component {
     };
 
     get(rooms, id) {
-        axios.get('http://18.144.84.50/api/profiles', { params: { id: id } })
+        axios.get('http://52.53.209.190/api/profiles', { params: { id: id } })
           .then((result) => {    
               this.setState({rooms: result.data});
           })
